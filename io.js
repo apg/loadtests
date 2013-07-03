@@ -1,6 +1,6 @@
 // io.js
 var pg = require('pg');
-var LOOP_DELAY = process.env.LOOP_DELAY || 100;
+var LOOP_DELAY = parseInt(process.env.LOOP_DELAY) || 100;
 
 var do_io = function () {
   pg.connect(process.env.DATABASE_URL, function(err, client) {
