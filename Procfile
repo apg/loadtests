@@ -1,4 +1,6 @@
-cpu_worker_singleproc: node cpu.js
-cpu_worker_multiproc: node fork-cpu.js
-io_worker_singleproc: node io.js
-io_worker_multiproc: node fork-io.js
+cpu_worker_multiproc1: node fork-cpu.js
+cpu_worker_multiproc2: node fork-cpu.js
+cpu_worker_multiproc3: node fork-cpu.js
+io_worker_multiproc1: node fork-io.js
+io_worker_multiproc2: node fork-io.js
+io_worker_multiproc3: node fork-io.js
