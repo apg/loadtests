@@ -3,7 +3,7 @@ var http = require('http');
 function handleRequest(erquest, response) {
   setTimeout(function() {
     response.end();
-  }, 1000);
+  }, parseInt(process.env.RESPONSE_TIME || 100));
 }
 
 var server = http.createServer(handleRequest);
